@@ -5,8 +5,6 @@
 
 std::string generate_string(const int len)
 {
-	srand(time(NULL));
-
 	std::string result;
 	result.reserve(len);
 
