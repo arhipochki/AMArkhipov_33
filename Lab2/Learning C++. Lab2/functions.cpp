@@ -4,7 +4,7 @@
 #include <iostream>
 #include <iomanip>
 
-int** create_array(int rows, int cols)
+int** createArray(int rows, int cols)
 {
 	int **arr = new int* [rows];
 	for (int i = 0; i < rows; i++)
@@ -13,7 +13,7 @@ int** create_array(int rows, int cols)
 	return arr;
 }
 
-void free_array(int** arr, int rows)
+void freeArray(int** arr, int rows)
 {
 	for (int i = 0; i < rows; i++)
 		delete[] arr[i];
@@ -21,16 +21,16 @@ void free_array(int** arr, int rows)
 	delete[] arr;
 }
 
-void fill_array(int** arr, int rows, int cols)
+void fillArray(int** arr, int rows, int cols)
 {
 	for (int i = 0; i < rows; i++)
 		for (int j = 0; j < cols; j++)
 			arr[i][j] = rows * i + j + 1;
 }
 
-void print_array(int** arr, int rows, int cols)
+void printArray(int** arr, int rows, int cols)
 {
-	int width = (int)log10(rows * cols) + 2; // Р”Р»РёРЅР° СЏС‡РµРµРє (СЃ СѓС‡С‘С‚РѕРј РїСЂРѕР±РµР»Р°)
+	int width = (int)log10(rows * cols) + 2; // Длина ячеек (с учётом пробела)
 	for (int i = 0; i < rows; i++)
 	{
 		for (int j = 0; j < cols; j++)
@@ -39,7 +39,7 @@ void print_array(int** arr, int rows, int cols)
 	}
 }
 
-void fill_array_backward(int** arr, int rows, int cols)
+void fillArrayBackward(int** arr, int rows, int cols)
 {
 	int value = rows * cols;
 	for (int i = 0; i < rows; i++)
@@ -47,7 +47,7 @@ void fill_array_backward(int** arr, int rows, int cols)
 			arr[i][j] = value--;
 }
 
-void fill_array_along_main_diag(int** arr, int rows, int cols)
+void fillArrayAlongMainDiag(int** arr, int rows, int cols)
 {
 	int i = 0, j = 0, col = 0, line = 0;
 	int value = 1;
@@ -55,7 +55,7 @@ void fill_array_along_main_diag(int** arr, int rows, int cols)
 	while (true)
 	{
 		/*
-			Р—Р°РїРѕР»РЅСЏРµРј СЏС‡РµР№РєРё РїРѕ РґРёР°РіРѕРЅР°Р»Рё
+			Заполняем ячейки по диагонали
 			1 0 => 1 2 => 1 2
 			0 0    3 0    3 4
 		*/ 		
@@ -68,7 +68,7 @@ void fill_array_along_main_diag(int** arr, int rows, int cols)
 		i = line;
 		j = ++col;
 
-		// Р•СЃР»Рё РґРѕС€Р»Рё РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ СЃС‚РѕР±С†Р°, С‚Рѕ РЅР°С‡РёРЅР°РµРј СЃ РїРѕСЃР»РµРґРЅРµРіРѕ СЃС‚РѕР»Р±С†Р° Рё РЅРѕРІРѕР№ СЃС‚СЂРѕС‡РєРё
+		// Если дошли до последнего стобца, то начинаем с последнего столбца и новой строчки
 		if (j >= cols - 1)
 		{
 			col = cols - 1;
@@ -76,16 +76,16 @@ void fill_array_along_main_diag(int** arr, int rows, int cols)
 			line++;
 		}
 
-		// Р•СЃР»Рё РґРѕС€Р»Рё РґРѕ РїСЂР°РІРѕР№ РЅРёР¶РЅРµР№ СЏС‡РµР№РєРё - РІС‹С…РѕРґРёРј
+		// Если дошли до правой нижней ячейки - выходим
 		if (i == (rows - 1) && j == (cols - 1))
 			break;
 	}
 
-	// Р’С‹СЃС‚Р°РІР»СЏРµРј Р·РЅР°С‡РµРЅРёРµ РїРѕСЃР»РµРґРЅРµР№ СЏС‡РµР№РєРё
+	// Выставляем значение последней ячейки
 	arr[rows - 1][cols - 1] = rows * cols;
 }
 
-void fill_array_along_side_diag(int** arr, int rows, int cols)
+void fillArrayAlongSideDiag(int** arr, int rows, int cols)
 {
 	int i = rows - 1, j = 0, col = 0, line = rows - 1;
 	int value = 1;
@@ -93,7 +93,7 @@ void fill_array_along_side_diag(int** arr, int rows, int cols)
 	while (true)
 	{
 		/*
-			Р—Р°РїРѕР»РЅСЏРµРј СЏС‡РµР№РєРё РїРѕ РґРёР°РіРѕРЅР°Р»Рё
+			Заполняем ячейки по диагонали
 			0 0 => 2 0 => 2 0
 			1 0    1 3    1 3
 		*/
@@ -106,7 +106,7 @@ void fill_array_along_side_diag(int** arr, int rows, int cols)
 		i = --line;
 		j = col;
 
-		// Р•СЃР»Рё РІС‹С€Р»Рё Р·Р° РїРµСЂРІСѓСЋ СЃС‚СЂРѕРєСѓ, С‚Рѕ РІС‹СЃС‚Р°РІР»СЏРµРј РїРµСЂРІСѓСЋ СЃС‚СЂРѕРєСѓ Рё РЅР°С‡РёРЅР°РµРј СЃРѕ СЃР»РµРґСѓСЋС‰РµРіРѕ СЃС‚РѕР»Р±С†Р°
+		// Если вышли за первую строку, то выставляем первую строку и начинаем со следующего столбца
 		if (i <= 0)
 		{
 			line = 0;
@@ -114,7 +114,7 @@ void fill_array_along_side_diag(int** arr, int rows, int cols)
 			col++;
 		}
 
-		// Р•СЃР»Рё РґРѕС€Р»Рё РґРѕ РїСЂР°РІРѕРіРѕ РІРµСЂС…РЅРµРіРѕ СѓРіР»Р° - РІС‹С…РѕРґРёРј
+		// Если дошли до правого верхнего угла - выходим
 		if (i == (0) && j == (cols - 1))
 			break;
 	}
@@ -122,7 +122,7 @@ void fill_array_along_side_diag(int** arr, int rows, int cols)
 	arr[0][cols - 1] = rows * cols;
 }
 
-void fill_array_spiral(int** arr, int rows, int cols)
+void fillArraySpiral(int** arr, int rows, int cols)
 {
 	int i = 0, j = 0,
 		t_rows = rows,
@@ -134,31 +134,31 @@ void fill_array_spiral(int** arr, int rows, int cols)
 
 	while (true)
 	{
-		// Р—Р°РїРѕР»РЅСЏРµРј РІСЃРµ СЏС‡РµР№РєРё РІ СЃС‚СЂРѕРєРµ
+		// Заполняем все ячейки в строке
 		for (j = next_col; j < t_cols; j++)
 			arr[i][j] = value++;
-		j--; // РЈС‡РёС‚С‹РІР°РµРј РїСЂРёРЅС†РёРї СЂР°Р±РѕС‚С‹ С†РёРєР»Р° for, Р·РЅР°С‡РµРЅРёРµ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РЅР° 1 РјРµРЅСЊС€Рµ РёР»Рё Р±РѕР»СЊС€Рµ РІР·Р°РІРёСЃРёРјРѕСЃС‚Рё РѕС‚ РїСѓС‚Рё
+		j--; // Учитываем принцип работы цикла for, значение становится на 1 меньше или больше взависимости от пути
 
-		// Р—Р°РїРѕР»РЅСЏРµРј РІСЃРµ СЏС‡РµР№РєРё РІ СЃС‚РѕР±С†Рµ
+		// Заполняем все ячейки в стобце
 		for (i = next_row; i < t_rows; i++)
 			arr[i][j] = value++;
 		i--;
 
-		t_cols--; // РЈРјРµРЅСЊС€Р°РµРј РєРѕР»РёС‡РµСЃРІС‚Рѕ СЃС‚РѕР»Р±С†РѕРІ, РєРѕС‚РѕСЂС‹Рµ РїСЂРµРґСЃС‚РѕРёС‚ Р·Р°РїРѕР»РЅРёС‚СЊ
+		t_cols--; // Уменьшаем количесвто столбцов, которые предстоит заполнить
 		for (j = t_cols - 1; j > next_col - 1; j--)
 			arr[i][j] = value++;
 		j++;
 
-		t_rows--; // РЈРјРµРЅСЊС€Р°РµРј РєРѕР»РёС‡РµСЃРІС‚Рѕ СЃС‚СЂРѕРє, РєРѕС‚РѕСЂС‹Рµ РїСЂРµРґСЃС‚РѕРёС‚ Р·Р°РїРѕР»РЅРёС‚СЊ
+		t_rows--; // Уменьшаем количесвто строк, которые предстоит заполнить
 		for (i = t_rows - 1; i > next_row - 1; i--)
 			arr[i][j] = value++;
 		i++;
 
-		// РЎРґРІРёРіР°РµРј СЃС‚Р°СЂС‚ Р·Р°РїРѕР»РЅРµРЅРёСЏ 
+		// Сдвигаем старт заполнения 
 		next_col++;
 		next_row++;
 
-		// Р•СЃР»Рё РґРѕС€Р»Рё РґРѕ С†РµРЅС‚СЂР° (РїРѕСЃР»РµРґРЅРµРіРѕ С‡РёСЃР»Р°) - РІС‹С…РѕРґРёРј
+		// Если дошли до центра (последнего числа) - выходим
 		if (t_rows == (int)(rows / 2) && t_cols == (int)floor(cols / 2))
 			break;
 	}

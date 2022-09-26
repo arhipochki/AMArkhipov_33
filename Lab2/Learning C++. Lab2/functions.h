@@ -1,20 +1,22 @@
 #pragma once
 
 /*
-	Создаём двумерный массив
+	Создаёт двумерный массив
+
 	@param arr - указатель на двумерный массив, который будет создан
 	@param rows - количество строк массива
 	@param cols - количество столбцов массива
 	@return Возвращает указатель на созданый массив
 */
-int** create_array(int rows, int cols);
+int** createArray(int rows, int cols);
 
 /*
 	Очищает массив
+	
 	@param arr - указатель на двумерный массив, который будет очищен
 	@param rows - количество строк
 */
-void free_array(int** arr, int rows);
+void freeArray(int** arr, int rows);
 
 /*
 	Заполняет массив элементами от 1 до rows * cols
@@ -23,7 +25,7 @@ void free_array(int** arr, int rows);
 	@param rows - количество строк
 	@param cols - количество столбцов
 */
-void fill_array(int** arr, int rows, int cols);
+void fillArray(int** arr, int rows, int cols);
 
 /*
 *	Выводит массив
@@ -32,7 +34,7 @@ void fill_array(int** arr, int rows, int cols);
 	@param rows - количество строк
 	@param cols - количество столбцов
 */
-void print_array(int** arr, int rows, int cols);
+void printArray(int** arr, int rows, int cols);
 
 /*
 *	Заполнить массив от rows * cols до 1
@@ -41,7 +43,7 @@ void print_array(int** arr, int rows, int cols);
 	@param rows - количество строк
 	@param cols - количество столбцов
 */
-void fill_array_backward(int** arr, int rows, int cols);
+void fillArrayBackward(int** arr, int rows, int cols);
 
 /*
 *	Заполнить массив от 1 до rows * cols вдоль главной диагонали
@@ -50,7 +52,7 @@ void fill_array_backward(int** arr, int rows, int cols);
 	@param rows - количество строк
 	@param cols - количество столбцов
 */
-void fill_array_along_main_diag(int** arr, int rows, int cols);
+void fillArrayAlongMainDiag(int** arr, int rows, int cols);
 
 /*
 *	Заполнить массив от 1 до rows * cols вдоль побочной диагонали
@@ -59,7 +61,7 @@ void fill_array_along_main_diag(int** arr, int rows, int cols);
 	@param rows - количество строк
 	@param cols - количество столбцов
 */
-void fill_array_along_side_diag(int** arr, int rows, int cols);
+void fillArrayAlongSideDiag(int** arr, int rows, int cols);
 
 /*
 *	Заполнить массив от 1 до rows * cols спиралью
@@ -68,4 +70,4 @@ void fill_array_along_side_diag(int** arr, int rows, int cols);
 	@param rows - количество строк
 	@param cols - количество столбцов
 */
-void fill_array_spiral(int** arr, int rows, int cols);
+void fillArraySpiral(int** arr, int rows, int cols);

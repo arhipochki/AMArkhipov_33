@@ -1,7 +1,6 @@
-#include <iostream>
+﻿#include <iostream>
 
 #include "functions.h"
-
 
 /*
 
@@ -11,7 +10,8 @@
 	2. Выделить память под двумерный массив N*N. Тип массива int.
 	3. Заполнить массив значениями в порядке возрастания от 1 до N*N, так, что элемент [N - 1][N - 1] будет равен N * N.
 	4. Предложить пользователю возможность выполнить манипуляции с порядком элементов в массиве.
-		- Восстановить прямой порядок элементов(Не является отдельным действием в рамках базовой части задание, т.е. помимо него нужно реализовать еще 2).
+		- Восстановить прямой порядок элементов(Не является отдельным действием в рамках базовой части задание, т.е. 
+			помимо него нужно реализовать еще 2).
 		- Сделать обратный порядок элементов (т.е. элемент [N - 1][N - 1] будет иметь значение 1)
 		- Сделать порядок элементов таким, что бы они были выложены вдоль главной диагонали.
 		- Сделать порядок элементов таким, что бы они были выложены вдоль побочной диагонали.
@@ -26,14 +26,14 @@ int main()
 	std::cin >> N;
 	std::cout << "\n";
 
-	int** arr = create_array(N, N);
+	int** arr = createArray(N, N);
 
-	fill_array(arr, N, N);
+	fillArray(arr, N, N);
 
 	int ans = 0;
 	while (true)
 	{
-		print_array(arr, N, N);
+		printArray(arr, N, N);
 
 		std::cout << "Actions:\n"
 			<< "1) Fill normal\n"
@@ -52,19 +52,19 @@ int main()
 		case 0:
 			return 0;
 		case 1:
-			fill_array(arr, N, N);
+			fillArray(arr, N, N);
 			break;
 		case 2:
-			fill_array_backward(arr, N, N);
+			fillArrayBackward(arr, N, N);
 			break;
 		case 3:
-			fill_array_along_main_diag(arr, N, N);
+			fillArrayAlongMainDiag(arr, N, N);
 			break;
 		case 4:
-			fill_array_along_side_diag(arr, N, N);
+			fillArrayAlongSideDiag(arr, N, N);
 			break;
 		case 5:
-			fill_array_spiral(arr, N, N);
+			fillArraySpiral(arr, N, N);
 			break;
 		default:
 			break;
@@ -73,7 +73,7 @@ int main()
 		system("cls");
 	}
 
-	free_array(arr, N);
+	freeArray(arr, N);
 
 	return 0;
 }
