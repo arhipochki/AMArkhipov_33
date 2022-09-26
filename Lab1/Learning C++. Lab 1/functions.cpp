@@ -1,9 +1,8 @@
 #include "functions.h"
 
 #include <string>
-#include <ctime>
 
-std::string generate_string(const int len)
+std::string generateString(const int len)
 {
 	std::string result;
 	result.reserve(len);
