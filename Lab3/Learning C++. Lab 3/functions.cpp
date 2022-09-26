@@ -19,7 +19,7 @@ BirthDate generateBirthDate()
 
 	BirthDate date;
 
-	// Получаем текущий год
+	// РџРѕР»СѓС‡Р°РµРј С‚РµРєСѓС‰РёР№ РіРѕРґ
 	std::time_t t = std::time(NULL);
 	std::tm cur_time;
 	localtime_s(&cur_time, &t);
@@ -44,21 +44,21 @@ BirthDate generateBirthDate()
 
 std::string generateName(Sex sex)
 {
-	std::vector<std::string> names;			// Имена
-	std::vector<std::string> middle_names;	// Отчества
-	std::vector<std::string> surnames;		// Фамилии
+	std::vector<std::string> names;			// РРјРµРЅР°
+	std::vector<std::string> middle_names;	// РћС‚С‡РµСЃС‚РІР°
+	std::vector<std::string> surnames;		// Р¤Р°РјРёР»РёРё
 
 	if (sex == Sex::FEMALE)
 	{
-		names = { "Юлия", "Полина", "Анастасия", "Татьяна" };
-		middle_names = { "Ивановна", "Игоревна", "Вячеславовна", "Петровна" };
-		surnames = { "Романова", "Марченко", "Солодкова", "Василькова"};
+		names = { "Р®Р»РёСЏ", "РџРѕР»РёРЅР°", "РђРЅР°СЃС‚Р°СЃРёСЏ", "РўР°С‚СЊСЏРЅР°" };
+		middle_names = { "РРІР°РЅРѕРІРЅР°", "РРіРѕСЂРµРІРЅР°", "Р’СЏС‡РµСЃР»Р°РІРѕРІРЅР°", "РџРµС‚СЂРѕРІРЅР°" };
+		surnames = { "Р РѕРјР°РЅРѕРІР°", "РњР°СЂС‡РµРЅРєРѕ", "РЎРѕР»РѕРґРєРѕРІР°", "Р’Р°СЃРёР»СЊРєРѕРІР°"};
 	}
 	else
 	{
-		names = { "Иосиф", "Владимир", "Никита", "Юрий", "Константин" };
-		middle_names = { "Виссарионович", "Ильич", "Сергеевич", "Владимирович", "Устинович" };
-		surnames = { "Сталин", "Ленин", "Хрущёв", "Андропов", "Черненко" };
+		names = { "РРѕСЃРёС„", "Р’Р»Р°РґРёРјРёСЂ", "РќРёРєРёС‚Р°", "Р®СЂРёР№", "РљРѕРЅСЃС‚Р°РЅС‚РёРЅ" };
+		middle_names = { "Р’РёСЃСЃР°СЂРёРѕРЅРѕРІРёС‡", "РР»СЊРёС‡", "РЎРµСЂРіРµРµРІРёС‡", "Р’Р»Р°РґРёРјРёСЂРѕРІРёС‡", "РЈСЃС‚РёРЅРѕРІРёС‡" };
+		surnames = { "РЎС‚Р°Р»РёРЅ", "Р›РµРЅРёРЅ", "РҐСЂСѓС‰С‘РІ", "РђРЅРґСЂРѕРїРѕРІ", "Р§РµСЂРЅРµРЅРєРѕ" };
 	}
 
 	return std::string(surnames[rand() % surnames.size()] + " "
@@ -81,7 +81,7 @@ void fillEmployees(Person* employees, int size)
 	for (int i = 0; i < size; i++)
 	{
 		std::cout << "Input a name: ";
-		std::cin.ignore();	// игнорируем последний перенос строки (\n)
+		std::cin.ignore();	// РёРіРЅРѕСЂРёСЂСѓРµРј РїРѕСЃР»РµРґРЅРёР№ РїРµСЂРµРЅРѕСЃ СЃС‚СЂРѕРєРё (\n)
 		std::getline(std::cin, employees[i].name);
 		std::cout << "\n";
 
