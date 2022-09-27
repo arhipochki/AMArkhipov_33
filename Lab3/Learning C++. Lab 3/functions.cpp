@@ -45,7 +45,7 @@ BirthDate generateBirthDate()
 std::string generateName(Sex sex)
 {
 	std::vector<std::string> names;			// Имена
-	std::vector<std::string> middle_names;	// Отчества
+	std::vector<std::string> middle_names;		// Отчества
 	std::vector<std::string> surnames;		// Фамилии
 
 	if (sex == Sex::FEMALE)
