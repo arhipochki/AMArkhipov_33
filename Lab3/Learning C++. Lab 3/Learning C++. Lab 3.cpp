@@ -64,7 +64,7 @@ int main()
     system("cls");
     printEmployees(employees, N);
 
-    int ans = 0;
+    char ans = 0;
     while (true)
     {
         std::cout << "Actions:\n"
@@ -80,31 +80,36 @@ int main()
 
         std::string name;
         int year = 0;
+        int found_count = 0;
         char type = 0;
         char sex = 0;
 
-        Person* found_person;
+        Person* found_persons = nullptr;
 
         system("cls");
 
         switch (ans)
         {
-        case 0:
+        case '0':
             return 0;
-        case 1:
+        case '1':
             std::cout << "Input a name to look for: ";
             std::cin.ignore(); // игнорируем последний перенос строки (\n)
             std::getline(std::cin, name);
             std::cout << "\n";
-            found_person = searchByName(name, employees, N);
+            found_persons = searchByName(name, employees, N, &found_count);
 
-            if (found_person != nullptr)
-                printPersonInfo(*found_person);
+            if (found_persons != nullptr)
+            {
+                printEmployees(found_persons, found_count);
+            }
             else
                 std::cout << "NOT FOUND\n\n";
 
+            delete[] found_persons;
+
             break;
-        case 2:
+        case '2':
             std::cout << "Input a year to make a cross-section: ";
             std::cin >> year;
             std::cout << "[A]bove or [L]ower?: ";
@@ -130,9 +135,19 @@ int main()
                 }
             }
 
-            formCrossSectionByYearOfBirth(year, type, employees, N);
+            found_persons = formCrossSectionByYearOfBirth(year, type, employees, N, &found_count);
+
+            if (found_persons != nullptr)
+            {
+                printEmployees(found_persons, found_count);
+            }
+            else
+                std::cout << "NOT FOUND\n\n";
+
+            delete[] found_persons;
+
             break;
-        case 3:
+        case '3':
             std::cout << "Input a sex to make a statistics [M]ale, [F]emale: ";
             std::cin >> sex;
             std::cout << "\n";
@@ -144,11 +159,11 @@ int main()
                 {
                 case 'M':
                     loop = false;
-                    employeesStatisticsBySex(Sex::MALE, employees, N);
+                    found_persons = employeesStatisticsBySex(Sex::MALE, employees, N, &found_count);
                     break;
                 case 'F':
                     loop = false;
-                    employeesStatisticsBySex(Sex::FEMALE, employees, N);
+                    found_persons = employeesStatisticsBySex(Sex::FEMALE, employees, N, &found_count);
                     break;
                 default:
                     std::cout << "Ooops, wrong input. Choose one from [M, F]: ";
@@ -157,8 +172,18 @@ int main()
                     break;
                 }
             }
+
+            if (found_persons != nullptr)
+            {
+                printEmployees(found_persons, found_count);
+            }
+            else
+                std::cout << "NOT FOUND\n\n";
+
+            delete[] found_persons;
+
             break;
-        case 4:
+        case '4':
             std::cout << "[I]ncrease or [D]ecrease?: ";
             std::cin >> type;
             std::cout << "\n";
@@ -186,10 +211,11 @@ int main()
 
             printEmployees(employees, N);
             break;
-        case 5:
+        case '5':
             printEmployees(employees, N);
             break;
         default:
+            std::cout << "Ooops, wrong input. Try again. \n";
             break;
         }
     }

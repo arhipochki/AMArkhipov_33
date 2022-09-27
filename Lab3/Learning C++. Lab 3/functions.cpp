@@ -19,7 +19,7 @@ BirthDate generateBirthDate()
 
 	BirthDate date;
 
-	// РџРѕР»СѓС‡Р°РµРј С‚РµРєСѓС‰РёР№ РіРѕРґ
+	// Получаем текущий год
 	std::time_t t = std::time(NULL);
 	std::tm cur_time;
 	localtime_s(&cur_time, &t);
@@ -44,21 +44,21 @@ BirthDate generateBirthDate()
 
 std::string generateName(Sex sex)
 {
-	std::vector<std::string> names;			// РРјРµРЅР°
-	std::vector<std::string> middle_names;	// РћС‚С‡РµСЃС‚РІР°
-	std::vector<std::string> surnames;		// Р¤Р°РјРёР»РёРё
+	std::vector<std::string> names;			// Имена
+	std::vector<std::string> middle_names;	// Отчества
+	std::vector<std::string> surnames;		// Фамилии
 
 	if (sex == Sex::FEMALE)
 	{
-		names = { "Р®Р»РёСЏ", "РџРѕР»РёРЅР°", "РђРЅР°СЃС‚Р°СЃРёСЏ", "РўР°С‚СЊСЏРЅР°" };
-		middle_names = { "РРІР°РЅРѕРІРЅР°", "РРіРѕСЂРµРІРЅР°", "Р’СЏС‡РµСЃР»Р°РІРѕРІРЅР°", "РџРµС‚СЂРѕРІРЅР°" };
-		surnames = { "Р РѕРјР°РЅРѕРІР°", "РњР°СЂС‡РµРЅРєРѕ", "РЎРѕР»РѕРґРєРѕРІР°", "Р’Р°СЃРёР»СЊРєРѕРІР°"};
+		names = { "Юлия", "Полина", "Анастасия", "Татьяна" };
+		middle_names = { "Ивановна", "Игоревна", "Вячеславовна", "Петровна" };
+		surnames = { "Романова", "Марченко", "Солодкова", "Василькова"};
 	}
 	else
 	{
-		names = { "РРѕСЃРёС„", "Р’Р»Р°РґРёРјРёСЂ", "РќРёРєРёС‚Р°", "Р®СЂРёР№", "РљРѕРЅСЃС‚Р°РЅС‚РёРЅ" };
-		middle_names = { "Р’РёСЃСЃР°СЂРёРѕРЅРѕРІРёС‡", "РР»СЊРёС‡", "РЎРµСЂРіРµРµРІРёС‡", "Р’Р»Р°РґРёРјРёСЂРѕРІРёС‡", "РЈСЃС‚РёРЅРѕРІРёС‡" };
-		surnames = { "РЎС‚Р°Р»РёРЅ", "Р›РµРЅРёРЅ", "РҐСЂСѓС‰С‘РІ", "РђРЅРґСЂРѕРїРѕРІ", "Р§РµСЂРЅРµРЅРєРѕ" };
+		names = { "Иосиф", "Владимир", "Никита", "Юрий", "Константин" };
+		middle_names = { "Виссарионович", "Ильич", "Сергеевич", "Владимирович", "Устинович" };
+		surnames = { "Сталин", "Ленин", "Хрущёв", "Андропов", "Черненко" };
 	}
 
 	return std::string(surnames[rand() % surnames.size()] + " "
@@ -81,7 +81,7 @@ void fillEmployees(Person* employees, int size)
 	for (int i = 0; i < size; i++)
 	{
 		std::cout << "Input a name: ";
-		std::cin.ignore();	// РёРіРЅРѕСЂРёСЂСѓРµРј РїРѕСЃР»РµРґРЅРёР№ РїРµСЂРµРЅРѕСЃ СЃС‚СЂРѕРєРё (\n)
+		std::cin.ignore();	// игнорируем последний перенос строки (\n)
 		std::getline(std::cin, employees[i].name);
 		std::cout << "\n";
 
@@ -139,38 +139,87 @@ inline void printPersonInfo(Person person)
 	std::cout << "Birth Date: " << std::put_time(&time, "%d.%m.%Y") << "\n\n";
 }
 
-Person* searchByName(std::string name, Person* employees, int size)
+Person* searchByName(std::string name, Person* employees, int size, int* found_count)
 {
+	std::vector<int> idxs;
+	*found_count = 0;
+
 	for (int i = 0; i < size; i++)
 	{
 		if (employees[i].name == name)
-			return &employees[i];
+			idxs.push_back(i);
+	}
+
+	if (idxs.size() > 0)
+	{
+		*found_count = idxs.size();
+		
+		Person* found = new Person[*found_count];
+
+		for (int i = 0; i < idxs.size(); i++)
+			found[i] = employees[idxs[i]];
+
+		return found;
 	}
 
 	return nullptr;
 }
 
-void formCrossSectionByYearOfBirth(int year, char type, Person* employees, int size)
+Person* formCrossSectionByYearOfBirth(int year, char type, Person* employees, int size, int* found_count)
 {
+	std::vector<int> idxs;
+	*found_count = 0;
+
 	if (type == 'A')
 	{
 		for (int i = 0; i < size; i++)
 			if (employees[i].birth_date.year > year)
-				printPersonInfo(employees[i]);
+				idxs.push_back(i);
 	}
 	else
 	{
 		for (int i = 0; i < size; i++)
 			if (employees[i].birth_date.year < year)
-				printPersonInfo(employees[i]);
+				idxs.push_back(i);
 	}
+
+	if (idxs.size() > 0)
+	{
+		*found_count = idxs.size();
+
+		Person* found = new Person[*found_count];
+
+		for (int i = 0; i < idxs.size(); i++)
+			found[i] = employees[idxs[i]];
+
+		return found;
+	}
+
+	return nullptr;
 }
 
-void employeesStatisticsBySex(Sex sex, Person* employees, int size)
+Person* employeesStatisticsBySex(Sex sex, Person* employees, int size, int* found_count)
 {
+	std::vector<int> idxs;
+	*found_count = 0;
+
 	for (int i = 0; i < size; i++)
 		if (employees[i].sex == sex)
-			printPersonInfo(employees[i]);
+			idxs.push_back(i);
+
+	if (idxs.size() > 0)
+	{
+		*found_count = idxs.size();
+
+		Person* found = new Person[*found_count];
+
+		for (int i = 0; i < idxs.size(); i++)
+			found[i] = employees[idxs[i]];
+
+		return found;
+	}
+
+	return nullptr;
 }
 
 void sortByAge(char type, Person* employees, int size)

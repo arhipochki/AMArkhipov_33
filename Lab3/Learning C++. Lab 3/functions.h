@@ -1,6 +1,6 @@
 #pragma once
 
-#include "structures.h"
+#include "types.h"
 
 /*
 	Заполняет массив работников сгенерированными людьми
@@ -60,9 +60,10 @@ void printPersonInfo(Person person);
 
 	@param employees - массив, где будем искать
 	@param name - ФИО, по которому будем искать
-	@return Возвращает указатель на структуру Person со всеми данными
+	@param found_count - указатель, куда будет сохранено количество найденных пользоватлей
+	@return Возвращает массив найденных людей по ФИО
 */
-Person* searchByName(std::string name, Person* employees, int size);
+Person* searchByName(std::string name, Person* employees, int size, int* found_count);
 
 /*
 	Формирует срез рабочих по году (больше или меньше заданного года)
@@ -71,8 +72,10 @@ Person* searchByName(std::string name, Person* employees, int size);
 	@param type - тип среза (меньше или больше года)
 	@param employees - массив рабочих
 	@param size - размер массива
+	@param found_count - указатель, куда будет сохранено количество найденных пользоватлей
+	@return Возвращает срез людей по году (больше или меньше опеределённого года)
 */
-void formCrossSectionByYearOfBirth(int year, char type, Person* employees, int size);
+Person* formCrossSectionByYearOfBirth(int year, char type, Person* employees, int size, int* found_count);
 
 /*
 	Выводим статистику всех работников определённого пола
@@ -80,10 +83,16 @@ void formCrossSectionByYearOfBirth(int year, char type, Person* employees, int s
 	@param sex - пол
 	@param employees - массив работников
 	@param size - размер массива
+	@param found_count - указатель, куда будет сохранено количество найденных пользоватлей
+	@return Возвращает статистику людей определённого пола
 */
-void employeesStatisticsBySex(Sex sex, Person* employees, int size);
+Person* employeesStatisticsBySex(Sex sex, Person* employees, int size, int* found_count);
 
 /*
 	Сортирует массив работников по возрастанию или убыванию даты рождения
+
+	@param type - тип сортировки 
+	@param employees - массив работников, который будем сортировать
+	@param size - размер сортируемого массива
 */
 void sortByAge(char type, Person* employees, int size);
