@@ -100,9 +100,7 @@ int main()
             found_persons = searchByName(name, employees, N, &found_count);
 
             if (found_persons != nullptr)
-            {
                 printEmployees(found_persons, found_count);
-            }
             else
                 std::cout << "NOT FOUND\n\n";
 
@@ -138,9 +136,7 @@ int main()
             found_persons = formCrossSectionByYearOfBirth(year, type, employees, N, &found_count);
 
             if (found_persons != nullptr)
-            {
                 printEmployees(found_persons, found_count);
-            }
             else
                 std::cout << "NOT FOUND\n\n";
 
@@ -174,9 +170,7 @@ int main()
             }
 
             if (found_persons != nullptr)
-            {
                 printEmployees(found_persons, found_count);
-            }
             else
                 std::cout << "NOT FOUND\n\n";
 

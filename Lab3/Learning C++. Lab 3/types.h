@@ -3,22 +3,22 @@
 #include <string>
 
 /*
-	РџРµСЂРµС‡РёСЃР»РµРЅРёРµ РїРѕР»Р°: 0 - РјСѓР¶С‡РёРЅР°, 1 - Р¶РµРЅС‰РёРЅР°
+	Перечисление пола: 0 - мужчина, 1 - женщина
 */
 enum class Sex { MALE, FEMALE };
 
 /*
-	РџРµСЂРµС‡РёСЃР»РµРЅРёРµ РјРµСЃСЏС†РµРІ, РЅР°С‡РёРЅР°СЏ СЃ 1
+	Перечисление месяцев, начиная с 1
 */
 enum class Month { JANUARY = 1, FEBRUARY, MARCH, APRIL, MAY, JUNE, 
 			 JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
 
 /*
-	РЎС‚СЂСѓРєС‚СѓСЂР° РґР°С‚С‹.
+	Структура даты.
 
-	@param day - РґРµРЅСЊ
-	@param month - РјРµСЃСЏС† РёР· РїРµСЂРµС‡РёСЃР»РµРЅРёСЏ Month
-	@param year - РіРѕРґ
+	@param day - день
+	@param month - месяц из перечисления Month
+	@param year - год
 */
 struct BirthDate {
 	int day;
@@ -27,11 +27,11 @@ struct BirthDate {
 };
 
 /*
-	РЎС‚СЂСѓРєС‚СѓСЂР° С‡РµР»РѕРІРµРєР°.
+	Структура человека.
 
-	@param name - Р¤РРћ.
-	@param sex - РїРѕР»
-	@param birth_date - СЃС‚СЂСѓРєС‚СѓСЂР° РґРЅСЏ СЂРѕР¶РґРµРЅРёСЏ
+	@param name - ФИО.
+	@param sex - пол
+	@param birth_date - структура дня рождения
 */
 struct Person {
 	std::string name;
@@ -41,32 +41,32 @@ struct Person {
 
 
 /*
-	РљР»Р°СЃСЃ РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ РІ СЃРѕСЂС‚РёСЂРѕРІРєРµ
+	Класс для использования в сортировке
 
-	@param m_type - С‚РёРї СЃРѕСЂС‚РёСЂРѕРІРєРё
+	@param type - тип сортировки
 */
 class customCompareByDate
-{ // РњРѕР¶РЅРѕ Р±С‹Р»Рѕ СЃРґРµР»Р°С‚СЊ Рё СЃС‚СЂСѓРєС‚СѓСЂСѓ
+{ // Можно было сделать и структуру
 public:
-	char m_type = 0;
+	char type = 0;
 
 	bool operator() (const Person first_person, Person second_person)
 	{
-		if (m_type == 'I') // РџРѕ СѓРІРµР»РёС‡РµРЅРёСЋ
+		if (type == 'I') // По возрастанию
 		{
-			if (first_person.birth_date.year < second_person.birth_date.year) // РЎРЅР°С‡Р°Р»Р° СЃСЂР°РІРЅРёРІР°РµРј РїРѕ РіРѕРґР°Рј
+			if (first_person.birth_date.year < second_person.birth_date.year) // Сначала сравниваем по годам
 				return true;
-			else if ((int)first_person.birth_date.month < (int)second_person.birth_date.month // РЎСЂР°РІРЅРёРІР°РµРј РїРѕ РјРµСЃСЏС†Р°Рј, РµСЃР»Рё РѕРґРёРЅР°РєРѕРІР° РіРѕРґР°
+			else if ((int)first_person.birth_date.month < (int)second_person.birth_date.month // Сравниваем по месяцам, если одинакова года
 				&& first_person.birth_date.year == second_person.birth_date.year)
 				return true;
-			else if (first_person.birth_date.day < second_person.birth_date.day // РЎРЅР°С‡Р°Р»Р° СЃСЂР°РІРЅРёРІР°РµРј РїРѕ РґРЅСЏ, РµСЃР»Рё РѕРґРёРЅР°РєРѕРІС‹ РјРµСЃСЏС†С‹ Рё РіРѕРґР°
+			else if (first_person.birth_date.day < second_person.birth_date.day // Сначала сравниваем по дня, если одинаковы месяцы и года
 				&& first_person.birth_date.month == second_person.birth_date.month
 				&& first_person.birth_date.year == second_person.birth_date.year)
 				return true;
 
 			return false;
 		}
-		else
+		else // По убыванию
 		{
 			if (first_person.birth_date.year > second_person.birth_date.year)
 				return true;
