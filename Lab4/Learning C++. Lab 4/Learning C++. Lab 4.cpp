@@ -31,7 +31,7 @@ int main()
     const int max_checks = 1000;
 
     int N;
-    std::cout << "Input count of circles: ";
+    std::cout << "Input count of figures: ";
     std::cin >> N;
     std::cout << "\n";
 
