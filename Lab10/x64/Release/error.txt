@@ -1,0 +1,2 @@
+[14:39:50 28/10/2022][ERROR]: An impossible position for K with coords x, y: 4 0
+[14:39:53 28/10/2022][ERROR]: An impossible position for P with coords x, y: 2 5

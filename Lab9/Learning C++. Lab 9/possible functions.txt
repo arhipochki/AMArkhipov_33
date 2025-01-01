@@ -1,0 +1,34 @@
+
+// template <typename T>
+// struct customLess {
+//         bool operator()(QuadraticEquation<T>& a, QuadraticEquation<T>& b) const 
+//         { return a.getRootsSum() < b.getRootsSum(); }
+// };
+
+// template <typename T>
+// bool predicate(QuadraticEquation<T>& a, QuadraticEquation<T>& b)
+// {
+//     auto a_roots = a.getRoots();
+//     auto b_roots = b.getRoots();
+
+//     return
+//         (a_roots[0][0] == b_roots[0][0] && a_roots[1][0] == b_roots[1][0]) ||
+//         (a_roots[1][0] == b_roots[0][0] && a_roots[0][0] == b_roots[1][0]);
+// }
+
+
+// template<typename T>
+// int findCountOfRootsLowerNum(T user_num, std::vector<QuadraticEquation<T>> vec)
+// {
+//     int count = 0;
+//     for (auto el : vec)
+//     {
+//         auto roots = el.getRoots();
+//         if (roots[0][0] < user_num && roots[1][0] < user_num)
+//             count += 2;
+//         else if (roots[0][0] < user_num || roots[1][0] < user_num)
+//             count++;
+//     }
+
+//     return count;
+// }

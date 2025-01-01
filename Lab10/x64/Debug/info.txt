@@ -1,0 +1,247 @@
+[8:59:31 28/10/2022][INFO]: Pe7-e5
+[8:59:33 28/10/2022][INFO]: Pe2-e4
+[8:59:41 28/10/2022][INFO]: Qd8-h4
+[8:59:43 28/10/2022][INFO]: Pd2-d3
+[8:59:44 28/10/2022][INFO]: Bf8-c5
+[8:59:45 28/10/2022][INFO]: Ng1-f3
+[8:59:46 28/10/2022][INFO]: Qh4-f2
+[8:59:46 28/10/2022][INFO]: Final statistics:
+[8:59:46 28/10/2022][INFO]: Eaten figures by bob
+[8:59:46 28/10/2022][INFO]: Total amount of eaten figures: 1
+[8:59:46 28/10/2022][INFO]: bP 
+[8:59:46 28/10/2022][INFO]: Figures, that was eaten by an eaten figure: 
+[8:59:46 28/10/2022][INFO]: bP: 
+[8:59:46 28/10/2022][INFO]: Eaten figures by alex
+[8:59:46 28/10/2022][INFO]: Total amount of eaten figures: 0
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: Figures, that was eaten by an eaten figure: 
+[8:59:46 28/10/2022][INFO]: Figures, that was eaten by a figure (on the board):
+[8:59:46 28/10/2022][INFO]: bR has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bN has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bB has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bQ has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bK has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bB has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bN has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bR has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: bP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wP has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wR has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wN has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wB has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wQ has eaten: 
+[8:59:46 28/10/2022][INFO]: bP 
+[8:59:46 28/10/2022][INFO]: wK has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wB has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wN has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: wR has eaten: 
+[8:59:46 28/10/2022][INFO]: 
+[8:59:46 28/10/2022][INFO]: History of moves (figures on the board):
+[8:59:46 28/10/2022][INFO]: History of bR. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bN. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bB. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bQ. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bK. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bB. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bN. Total amount of moves: 1
+[8:59:46 28/10/2022][INFO]: 1. f2
+[8:59:46 28/10/2022][INFO]: History of bR. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 1
+[8:59:46 28/10/2022][INFO]: 1. d2
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 1
+[8:59:46 28/10/2022][INFO]: 1. e3
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 1
+[8:59:46 28/10/2022][INFO]: 1. e4
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wR. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wN. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wB. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wQ. Total amount of moves: 2
+[8:59:46 28/10/2022][INFO]: 1. h3
+[8:59:46 28/10/2022][INFO]: 2. f1
+[8:59:46 28/10/2022][INFO]: History of wK. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wB. Total amount of moves: 1
+[8:59:46 28/10/2022][INFO]: 1. c4
+[8:59:46 28/10/2022][INFO]: History of wN. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of wR. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: History of moves (eaten figures):
+[8:59:46 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[8:59:46 28/10/2022][INFO]: Elapsed time by bob
+[8:59:46 28/10/2022][INFO]: 0:04
+[8:59:46 28/10/2022][INFO]: Elapsed time by alex
+[8:59:46 28/10/2022][INFO]: 0:24
+[8:59:46 28/10/2022][INFO]: Total elapsed time: 0:28
+[9:1:47 28/10/2022][INFO]: Pg7-g5
+[9:1:48 28/10/2022][INFO]: Pe2-e4
+[9:1:49 28/10/2022][INFO]: Pf7-f6
+[9:1:50 28/10/2022][INFO]: Qd1-h5
+[9:1:50 28/10/2022][INFO]: Final statistics:
+[9:1:50 28/10/2022][INFO]: Eaten figures by ll
+[9:1:50 28/10/2022][INFO]: Total amount of eaten figures: 0
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: Figures, that was eaten by an eaten figure: 
+[9:1:50 28/10/2022][INFO]: Eaten figures by nn
+[9:1:50 28/10/2022][INFO]: Total amount of eaten figures: 0
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: Figures, that was eaten by an eaten figure: 
+[9:1:50 28/10/2022][INFO]: Figures, that was eaten by a figure (on the board):
+[9:1:50 28/10/2022][INFO]: bR has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bN has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bB has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bQ has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bK has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bB has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bN has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bR has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: bP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wP has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wR has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wN has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wB has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wQ has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wK has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wB has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wN has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: wR has eaten: 
+[9:1:50 28/10/2022][INFO]: 
+[9:1:50 28/10/2022][INFO]: History of moves (figures on the board):
+[9:1:50 28/10/2022][INFO]: History of bR. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bN. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bB. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bQ. Total amount of moves: 1
+[9:1:50 28/10/2022][INFO]: 1. h4
+[9:1:50 28/10/2022][INFO]: History of bK. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bB. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bN. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bR. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 1
+[9:1:50 28/10/2022][INFO]: 1. e3
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of bP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 1
+[9:1:50 28/10/2022][INFO]: 1. f5
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 1
+[9:1:50 28/10/2022][INFO]: 1. g4
+[9:1:50 28/10/2022][INFO]: History of wP. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wR. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wN. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wB. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wQ. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wK. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wB. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wN. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of wR. Total amount of moves: 0
+[9:1:50 28/10/2022][INFO]: History of moves (eaten figures):
+[9:1:50 28/10/2022][INFO]: Elapsed time by ll
+[9:1:50 28/10/2022][INFO]: 0:02
+[9:1:50 28/10/2022][INFO]: Elapsed time by nn
+[9:1:50 28/10/2022][INFO]: 0:06
+[9:1:50 28/10/2022][INFO]: Total elapsed time: 0:08

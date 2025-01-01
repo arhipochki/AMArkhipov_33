@@ -18,6 +18,11 @@ Figure::Figure(const Figure& figure)
 	this->shape = figure.shape;
 }
 
+Figure::~Figure()
+{
+	delete shape;
+}
+
 // Сравниваем всегда по описанной окружности
 bool Figure::checkPosition(Figure* figure)
 {
@@ -52,6 +57,8 @@ void Figure::drawFigure(SDL_Renderer* renderer)
 
 void Figure::printInfo()
 {
+	// ((Circle*)this->shape)->printInfo();		// Привет, полиморфизм
+
 	if (this->type == "circle")
 		((Circle*)this->shape)->printInfo();
 	else if (type == "rectangle")

@@ -45,12 +45,12 @@ struct Person {
 
 	@param type - тип сортировки
 */
-class customCompareByDate
+class CustomCompareByDate
 { // Можно было сделать и структуру
 public:
 	char type = 0;
 
-	bool operator() (const Person first_person, Person second_person)
+	bool operator() (const Person first_person, const Person second_person)
 	{
 		if (type == 'I') // По возрастанию
 		{

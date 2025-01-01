@@ -1,4 +1,5 @@
 ﻿#include <ctime>
+#include <chrono>
 #include <iostream>
 #include <vector>
 
@@ -40,6 +41,7 @@ int main()
     for (int i = 0; i < N; i++)
         scene.figures.push_back(new Figure());
 
+    // Не выставлялся id в цикле заполнения
     for (int i = 0; i < N; i++)
     {
         scene.figures[i]->setId(i);
@@ -65,8 +67,7 @@ int main()
                 std::cout << "CANNOT BE PLACED:\n";
                 scene.figures[i]->printInfo();
                 scene.figures.erase(scene.figures.begin() + i);
-                i--;
-                j--;
+                i--; j--;
                 break;
             }
         }
@@ -82,6 +83,9 @@ int main()
 
     bool isRunning = true;
     SDL_Event event;
+
+    auto start = std::chrono::system_clock::now();
+    const float work_time = 50.0f; // в минутах
 
     while (isRunning)
     {
@@ -114,13 +118,22 @@ int main()
         SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xFF); // Цвет фона
 
         SDL_RenderPresent(renderer);
+
+        auto end = std::chrono::system_clock::now();
+        std::chrono::duration<double> elapsed_seconds = end - start;
+
+        if (elapsed_seconds.count() >= (work_time * 60))
+        {
+            std::cout << "TIME IS UP!\n";
+            isRunning = false;
+        }
     }
 
     SDL_DestroyRenderer(renderer);
     SDL_DestroyWindow(window);
     SDL_Quit();
 
-    scene.figures.clear();
+    std::cin.get();
 
     return 0;
 }

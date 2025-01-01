@@ -33,6 +33,11 @@ public:
 	Figure(const Figure& figure);
 
 	/*
+		Деструктор
+	*/
+	~Figure();
+
+	/*
 		Метод проверки позиции.
 		@param _figure - указатель на фигуру, с которой надо сравнить.
 		@return result - true, если пересеклись, иначе - false.

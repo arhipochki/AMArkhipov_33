@@ -78,11 +78,11 @@ int main()
         std::cin >> ans;
         std::cout << "\n";
 
-        std::string name;
-        int year = 0;
-        int found_count = 0;
-        char type = 0;
-        char sex = 0;
+        std::string name;       // Введённое имя
+        int year = 0;           // Введённый год
+        int found_count = 0;    // Количество найденный работников по запросу
+        char type = 0;          // Тип сортировки
+        char sex = 0;           // Введённый пол
 
         Person* found_persons = nullptr;
 

@@ -6,7 +6,7 @@
 	Класс шестиугольника. Наследуется от окружности (circle)
 	@param - hexagon_color - цвет шестиугольника
 */
-class Hexagon : Circle
+class Hexagon : public Circle
 {
 public:
 	RGB hexagon_color = RGB{ 0, 0, 0, 0 };

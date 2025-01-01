@@ -224,7 +224,7 @@ Person* employeesStatisticsBySex(Sex sex, Person* employees, int size, int* foun
 
 void sortByAge(char type, Person* employees, int size)
 {
-	customCompareByDate compare;
+	CustomCompareByDate compare;
 	compare.type = type;
 
 	std::sort(employees, employees + size, compare);

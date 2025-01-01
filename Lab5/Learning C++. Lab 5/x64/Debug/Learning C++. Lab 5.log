@@ -1,0 +1,3 @@
+﻿  Learning C++. Lab 5.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 5\Learning C++. Lab 5\Learning C++. Lab 5.cpp(34,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Learning C++. Lab 5.vcxproj -> C:\Users\lexan\source\repos\Learning C++. Lab 5\x64\Debug\Learning C++. Lab 5.exe

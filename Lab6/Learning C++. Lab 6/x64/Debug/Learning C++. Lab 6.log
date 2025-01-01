@@ -1,0 +1,39 @@
+﻿  AbstractTarget.cpp
+  Bullet.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Bullet.cpp(97,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Bullet.cpp(97,43): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Bullet.cpp(97,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Bullet.cpp(97,35): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Functions.cpp
+  Learning C++. Lab 6.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Learning C++. Lab 6.cpp(7,1): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Learning C++. Lab 6.cpp(11,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Learning C++. Lab 6.cpp(66,59): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Learning C++. Lab 6.cpp(66,56): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Mouse.cpp
+  MovingTarget.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\MovingTarget.cpp(48,39): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\MovingTarget.cpp(107,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\MovingTarget.cpp(107,43): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\MovingTarget.cpp(107,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\MovingTarget.cpp(107,35): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  OrdinaryTarget.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\OrdinaryTarget.cpp(42,39): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\OrdinaryTarget.cpp(82,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\OrdinaryTarget.cpp(82,43): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\OrdinaryTarget.cpp(82,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\OrdinaryTarget.cpp(82,35): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  ShineTarget.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\ShineTarget.cpp(45,39): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\ShineTarget.cpp(77,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\ShineTarget.cpp(77,43): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\ShineTarget.cpp(77,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\ShineTarget.cpp(77,35): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  ShootingRange.cpp
+  Weapon.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Weapon.cpp(69,50): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Weapon.cpp(69,43): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Weapon.cpp(69,39): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 6\Learning C++. Lab 6\Weapon.cpp(69,35): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Создание кода...
+  Learning C++. Lab 6.vcxproj -> C:\Users\lexan\source\repos\Learning C++. Lab 6\x64\Debug\Learning C++. Lab 6.exe

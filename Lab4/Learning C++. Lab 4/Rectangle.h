@@ -9,13 +9,13 @@
 	@param - heught - высота прямоугольника
 	@param rectangle_color - цвет прямоугольника
 */
-class Rectangle : Circle
+class Rectangle : public Circle
 {
 public:
 	int width = 0;
 	int height = 0;
 
-	RGB rectangle_color = RGB {0, 0, 0};
+	RGB rectangle_color = RGB {0, 0, 0, 0};
 
 	/*
 		Конструктор прямоугольника. Все параметры задаются случайно

@@ -88,8 +88,8 @@ public:
 	*/
 	void setId(int id);
 protected:
-	const double PI = 3.14f;
-	const double density = 0.01f;
-	const double mass = PI * radius * radius * density;
-	const int min_color = 100;
+	const double PI = 3.14f;							// число пи
+	const double density = 0.01f;						// плотность 
+	const double mass = PI * radius * radius * density;	// масса
+	const int min_color = 100;							// минимальная граница цвета
 };

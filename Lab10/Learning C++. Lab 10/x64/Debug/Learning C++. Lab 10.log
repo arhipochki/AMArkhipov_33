@@ -1,0 +1,14 @@
+﻿  Chess.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Defines.h(23,28): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Defines.h(24,29): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Player.h(34,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Chess.cpp(259,129): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Chess.cpp(259,63): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Chess.cpp(488,22): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Chess.cpp(489,22): warning C4244: инициализация: преобразование "_Rep" в "int", возможна потеря данных
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\lexan\source\repos\Learning C++. Lab 10\Learning C++. Lab 10\Chess.cpp(495,18): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Learning C++. Lab 10.vcxproj -> C:\Users\lexan\source\repos\Learning C++. Lab 10\x64\Debug\Learning C++. Lab 10.exe

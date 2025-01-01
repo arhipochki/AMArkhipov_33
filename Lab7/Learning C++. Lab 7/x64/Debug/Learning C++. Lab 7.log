@@ -1,0 +1,8 @@
+﻿  Book.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 7\Learning C++. Lab 7\Book.cpp(131,20): warning C4244: аргумент: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+C:\Users\lexan\source\repos\Learning C++. Lab 7\Learning C++. Lab 7\Book.cpp(147,25): warning C4244: =: преобразование "unsigned __int64" в "float", возможна потеря данных
+  Learning C++. Lab 7.vcxproj -> C:\Users\lexan\source\repos\Learning C++. Lab 7\x64\Debug\Learning C++. Lab 7.exe

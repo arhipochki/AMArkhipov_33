@@ -1,4 +1,62 @@
-﻿  Learning C++. Lab 4.cpp
-C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Learning C++. Lab 4.cpp(27,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Learning C++. Lab 4.cpp(56,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+﻿  Circle.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(8,36): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(9,37): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(20,36): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(21,37): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(31,26): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(31,35): warning C4244: инициализация: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(62,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(62,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(63,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(63,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(64,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(64,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(65,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(65,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(66,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(66,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(67,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(67,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(68,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(68,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(69,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(69,48): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(91,29): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(99,16): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(116,24): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(122,27): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(128,26): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(134,24): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(140,30): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(146,30): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(152,29): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(158,30): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(173,31): warning C4305: =: усечение из "double" в "float"
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(182,71): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(183,58): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(193,35): warning C4305: =: усечение из "double" в "float"
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(225,24): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(228,27): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(231,26): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(234,24): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Circle.cpp(237,31): warning C4305: =: усечение из "double" в "float"
+  Figure.cpp
+  Hexagon.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Hexagon.cpp(40,13): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Hexagon.cpp(42,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Hexagon.cpp(43,9): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Hexagon.cpp(50,34): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Hexagon.cpp(51,34): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  Learning C++. Lab 4.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Learning C++. Lab 4.cpp(28,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Learning C++. Lab 4.cpp(58,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Rectangle.cpp
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Rectangle.cpp(8,79): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Rectangle.cpp(10,45): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Rectangle.cpp(11,46): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Rectangle.cpp(43,20): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Rectangle.cpp(44,20): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+  Scene.cpp
+  Создание кода...
+C:\Users\lexan\source\repos\Learning C++. Lab 4\Learning C++. Lab 4\Figure.cpp(40): warning C4715: Figure::square: значение возвращается не при всех путях выполнения
   Learning C++. Lab 4.vcxproj -> C:\Users\lexan\source\repos\Learning C++. Lab 4\x64\Debug\Learning C++. Lab 4.exe

@@ -43,7 +43,9 @@ Circle::Circle(const Circle& _circle)
 
 void Circle::drawFigure(SDL_Renderer* renderer)
 {
-	const int diameter = (this->radius * 2);
+    // Mid-point algorithm: https://en.wikipedia.org/w/index.php?title=Midpoint_circle_algorithm&oldid=889172082#C_example
+    
+    const int diameter = (this->radius * 2);
 
 	int x = this->radius - 1;
 	int y = 0;
@@ -156,6 +158,8 @@ void Circle::checkCollision(Circle* _circle)
         _circle->px = _circle->radius;
         _circle->speed.x *= -1;
     }
+
+    // Теория: https://youtu.be/KrbNkCkeRGg
 
     // Передвигаем фигуры
     this->px += (this->speed.x);
